@@ -1,8 +1,18 @@
 /* ===Google Font=== */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* ===Google Font=== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap');
 
 
 /* ===Common CSS=== */
+
+:root{
+    --white: #FFFF;
+    --black: #000;
+    --ash: #0000;
+    --heading-text:#363958;
+    ---button-background: linear-gradient(180deg, #3D4FF3 0%, #3543BC 100%);
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,4 +20,86 @@
     text-decoration: none;
     list-style-type: none;
     outline: none;
+}
+
+/* ===Custom Style STart=== */
+.brand img{
+    width: 225px;
+    height: 31px;
+}
+
+.nav-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+/* ====Slider Area Design=== */
+.heading-text h1{
+    font-weight: 600;
+    font-size: 80px;
+    color: var(--heading-text);
+}
+.heading-text h1 span{
+    background-image: linear-gradient(90deg,#FA804C,#b64210);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading-text p{
+    text-align: justify;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
+.btns{
+    padding: 10px 20px;
+    background-image: var(---button-background);
+    border-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.slider{
+    width: 525.68px;
+    height: 483.18px;
+}
+/* ===Product Image Style=== */
+.section-heading{
+    color: var(--heading-text);
+}
+.product{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.product-image {
+    background: #F1F1F1;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.4s
+}
+.product-image img:hover{
+    transform: scale(1.1) rotate(40deg);
+    transition: 0.4s;
+}
+.product-details h3{
+    color: var(--heading-text);
+}
+.product-details p{
+    color: var(--heading-text);
+}
+.price h2{
+    color: #FA804C;
+}
+
+/*  */
+.policy-details{
+    width: 489px;
+    height: 135px;
+    color: var(--heading-text);
+}
+.policy-details img{
+    width: 79px;
+    height: 76px;
+    padding-left: 20px;
 }
